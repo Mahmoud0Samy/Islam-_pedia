@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="shortcut icon" type="image/jpg" href="img/1.jpg">
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contact-form{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px 20px;
+    background: White;
+    text-align: center;
+    box-shadow: -4px 5px 10px #4ea750;
+  }
+  .contact-form  h1{
+    color: Black;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .txt label{
+    display: inline-block;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14;
+  }
+  .txt input,.txt textarea{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #4ea750;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .txt input[type = "text"]:focus,.txt input[type = "email"]:focus,.txt textarea:focus{
+    width: 280px;
+    border-color: #4ea750;
+  }
+
+  .btn{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #4ea750;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background: #4ea750;
+  }
+</style>
+</head>
+<body>
+  <div class="contact-form">
+    <h1>Submit Message</h1>
+    <div class="txt">
+      <input type="text" name=""value="" placeholder="Enter your name">
+    </div>
+    <div class="txt">
+      <input type="email" name=""value="" placeholder="Enter your email">
+    </div>
+    <div class="txt">
+      <input type="text" name=""value="" placeholder="Enter your phone number">
+    </div>
+    <div class="txt">
+      <label>Message</label>
+      <textarea></textarea>
+    </div>
+    <a class="btn">Send Message</a>
+    </div>
+</body>
+</html>

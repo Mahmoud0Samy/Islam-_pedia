@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Islamopedia Descussion</title>
+  <link rel="shortcut icon" type="image/jpg" href="img/1.jpg">
+  <style>
+body {
+  background-image: url('img/222.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin:0;
+}
+.HeadHead{
+  text-align: center;
+  margin-top: 60px;
+}
+.HeadHead:hover{
+    animation-name: rubberBand;
+    animation-duration: 1s;
+}
+
+@keyframes rubberBand{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    35%{
+        transform: scale3d(1.25,.75,1);
+    }
+    45%{
+        transform: scale3d(.75,1,1);
+    }
+    60%{
+        transform: scale3d(1.2,.8,1);
+    }
+    75%{
+        transform: scale3d(1.05,.95,1);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+div.transbox {
+  margin: 30px;
+  background-color: #4CAF50;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: #4CAF50;
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.logo{
+  float: left;
+  padding: 10px 0;
+}
+nav{
+  float: right;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 30px;
+  position: relative;
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+}
+nav a:hover{
+  color: #000;
+  display: block;
+  background-color: darkgreen ;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+nav a:hover::before{
+  width: 100%;
+  transition: all ease-in-out 400ms;
+  display: inline;
+}
+* {
+	box-sizing: border-box;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+.row {
+  margin-left: 15%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column2 {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+
+.row2::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+  <a href="Islamopedia.html"><img src="img/LOGO.png" alt="logo" hight="100px" width="200px" class="logo"></a>
+  <nav>
+    <ul>
+      <li><a href="Contact.html">Contact us</a></li>
+      <li><a href="Islamopedia.html">Home</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Login.html">Sign up</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+<h1 class="HeadHead">Islamopedia</h1>
+<div class="row">
+  <div class="column">
+    <img src="img/6.jpg" width="200px" height="400px">
+  </div>
+
+  <div class="column">
+    <img src="img/6.jpg" width="200px" height="400px">
+  </div>
+
+  <div class="column">
+  <a href="Sample.html">  <img src="img/6.jpg" width="200px" height="400px"></a>
+  </div>
+  <div class="row2">
+    <div class="column2">
+      <img src="img/6.jpg" width="200px" height="400px">
+    </div>
+
+    <div class="column2">
+      <img src="img/6.jpg" width="200px" height="400px">
+    </div>
+
+    <div class="column2">
+    <a href="Sample.html">  <img src="img/6.jpg" width="200px" height="400px"></a>
+    </div>
+</div>
+</body>
+</html>

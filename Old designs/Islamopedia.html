@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Islamopedia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="shortcut icon" type="image/jpg" href="img/1.jpg">
+  <style>
+body {
+  background-image: url('img/222.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin:0;
+}
+.HeadHead{
+  text-align: center;
+  margin-top: 60px;
+}
+.HeadHead:hover{
+    animation-name: rubberBand;
+    animation-duration: 1s;
+}
+
+@keyframes rubberBand{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    35%{
+        transform: scale3d(1.25,.75,1);
+    }
+    45%{
+        transform: scale3d(.75,1,1);
+    }
+    60%{
+        transform: scale3d(1.2,.8,1);
+    }
+    75%{
+        transform: scale3d(1.05,.95,1);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+div.transbox {
+  margin: 30px;
+  background-color: #4CAF50;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: #4CAF50;
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.logo{
+  float: left;
+  padding: 10px 0;
+}
+nav{
+  float: right;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 30px;
+  position: relative;
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+}
+nav a:hover{
+  color: #000;
+  display: block;
+  background-color: darkgreen ;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+nav a:hover::before{
+  width: 100%;
+  transition: all ease-in-out 400ms;
+  display: inline;
+}
+.container2 {
+  position: relative;
+  width: 700px;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: 300px;
+  margin: 17%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4CAF50;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+  margin-left: 17%;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  pointer-events: none
+}
+
+.container2:hover .overlay {
+  height: 85%;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4CAF50;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+  margin-left: 17%;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  pointer-events: none
+}
+.container2:hover .overlay2 {
+  height: 85%;
+}
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4CAF50;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+  margin-left: 17%;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  pointer-events: none
+}
+.container2:hover .overlay3 {
+  height: 85%;
+}
+footer{
+  background: #4CAF50;
+}
+
+.footer-container{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo{
+  width: 180px;
+}
+
+.social-media{
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: #001a21;
+  margin-right: 0px;
+  padding: 5px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover{
+  color: #fc5c65;
+}
+.border{
+  width: 100px;
+  height: 4px;
+  background: #fc5c65;
+}
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width:700px){
+  .btn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+  <a href="Islamopedia.html"><img src="img/LOGO.png" alt="logo" hight="100px" width="200px" class="logo"></a>
+  <nav>
+    <ul>
+      <li><a href="Contact.html">Contact us</a></li>
+      <li><a href="Islamopedia.html">Home</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Login.html">Sign up</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+<h1 class="HeadHead">Islamopedia</h1>
+<div class="transbox">
+<p>- This website is a multilingual encyclopedia of islam of the academic discipline of
+Islamic studies <br> - The difference between Islampedia and any other website is
+that everything that you are going to read here will be with references to the
+original sources such as Sahih al-Bukhari, sahih muslim, Tafsir ibn Kathir and other various trusted sources
+<br> - Even in the discussion threads you will be able to know if you can trust
+the person you are in descussion with from the ranking system to all our users</p>
+</div>
+<div align="center">
+<div class="container2">
+      <a href="discussion.html"><img src="img/3.png" alt="discussion Threads" class="image" height="300px" width="200px"></a>
+    <div class="overlay">
+        <div class="text">Here you can discuss different topics and ask or answer questions.</div>
+    </div>
+</div>
+<div class="container2">
+        <img src="img/4.jpg" alt="Avatar" class="image" height="300px" width="200px">
+        <div class="overlay overlay2">
+            <div class="text">here you can read the Holy Quran</div>
+        </div>
+</div>
+<div class="container2">
+    <img src="img/5.jpg" alt="Avatar" class="image" height="300px" width="200px">
+    <div class="overlay overlay3">
+        <div class="text">Here You can find the calender</div>
+    </div>
+</div>
+</div>
+<footer>
+  <div class="footer-container">
+    <div class="left-col">
+      <img src="img/LOGO.png" alt="" class="logo">
+      <div class="social-media">
+        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
